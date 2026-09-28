@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/img/Icon/Star Icon.png" />
+    <title>Projects | Jess</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chonburi&family=Libre+Baskerville:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav class="site-nav">
+      <a class="brand" href="index.html">Jess</a>
+      <button class="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <div class="wrap">
+      <header class="page-header">
+        <h1 class="page-title">Projects</h1>
+      </header>
+
+      <div class="projects-detail-list">
+        <article id="f1-simulator" class="project-detail-item">
+          <h2 class="project-title">AI-Enhanced F1 Simulator</h2>
+          <p class="project-sub">
+            Project Lead & Core Developer · MSc Group Project · IBM UK Client
+          </p>
+
+          <div class="project-main-image">
+            <img
+              src="/img/F1 simulator/Live Telemetry Dashboard.png"
+              alt="Live Telemetry Dashboard Screenshot"
+            />
+          </div>
+
+          <div class="project-info-content">
+            <div class="project-section">
+              <h3>Overview</h3>
+              <p>
+                An AI-assisted driver coaching system built around the TORCS
+                racing simulator. It collects real-time driving telemetry,
+                provides a custom dashboard for monitoring performance, and uses
+                local LLM inference to generate driver coaching feedback.
+              </p>
+              <br />
+              <p>
+                Developed as part of my MSc group project for an IBM UK client,
+                the system combines TORCS, Python middleware, a Java-based
+                racing agent, and IBM Granite to analyze driving data and
+                provide feedback during racing.
+              </p>
+            </div>
+
+            <div class="project-section">
+              <h3>My Role</h3>
+              <p>
+                As one of the project leads and a core developer, I worked
+                mainly on the Python middleware, system integration, and
+                testing. I also helped coordinate the development of our
+                7-person Agile team.
+              </p>
+            </div>
+
+            <div class="project-section">
+              <h3>What I Worked On</h3>
+              <ul>
+                <li>
+                  Built a Python middleware pipeline to collect real-time TORCS
+                  telemetry through UDP.
+                </li>
+                <li>
+                  Integrated driving data from an existing Java-based racing
+                  agent to provide expert data for comparison with player
+                  performance.
+                </li>
+                <li>
+                  Designed the system architecture to separate real-time
+                  telemetry processing from slower LLM inference.
+                </li>
+                <li>
+                  Replaced file-based communication with queue-based data
+                  transfer and multiprocessing to reduce input and GUI delays.
+                </li>
+                <li>
+                  Integrated IBM Granite through Ollama to generate
+                  telemetry-based driver coaching.
+                </li>
+                <li>
+                  Developed automated tests using pytest and supported
+                  integration across different components.
+                </li>
+                <li>
+                  Coordinated development tasks, reviewed pull requests, and
+                  supported cross-team integration as a project lead.
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-section">
+              <h3>Technologies</h3>
+              <p class="tags">
+                Python · UDP · Multiprocessing · IBM Granite · pytest · GitHub ·
+                Agile
+              </p>
+            </div>
+
+            <div class="project-section">
+              <a
+                class="github-link"
+                href="https://github.com/F1-Group/AI-Enhanced-F1-Simulator"
+                target="_blank"
+                rel="noopener"
+              >
+                GitHub Repository &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="project-gallery">
+            <img
+              src="/img/F1 simulator/TORCS Screenshot 1.png"
+              alt="TORCS Screenshot 1"
+            />
+            <img
+              src="/img/F1 simulator/Dashboard Screenshot 1.png"
+              alt="Dashboard Screenshot 1"
+            />
+            <img
+              src="/img/F1 simulator/TORCS Screenshot 2.png"
+              alt="TORCS Screenshot 2"
+            />
+            <img
+              src="/img/F1 simulator/Dashboard Screenshot 2.png"
+              alt="Dashboard Screenshot 2"
+            />
+          </div>
+
+          <div class="project-demo">
+            <h3>Demo Video</h3>
+            <div class="video-container">
+              <iframe
+                width="1480"
+                height="593"
+                src="https://www.youtube.com/embed/gdIVZpb0Jr4"
+                title="AI-Enhanced F1 Simulator - Demo"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </article>
+
+        <hr class="project-divider" />
+
+        <article id="skaarl" class="project-detail-item">
+          <h2 class="project-title">SKAARL - 2D Platformer</h2>
+          <p class="project-sub">
+            Project Manager & Developer · MSc Course Project
+          </p>
+
+          <div class="project-main-image">
+            <img
+              src="/img/SKAARL/Skaarl.png"
+              alt="SKAARL 2D Platformer Main Screenshot"
+            />
+          </div>
+
+          <div class="project-info-content">
+            <div class="project-section">
+              <h3>Overview</h3>
+              <p>
+                A 2D platformer developed as part of my MSc course, featuring
+                multiple scenes, interactive gameplay, enemies, and UI elements.
+              </p>
+              <br />
+              <p>
+                The project was developed by a 6-person Agile team using
+                JavaScript and p5.js. I contributed to both game development and
+                project management throughout the development process.
+              </p>
+            </div>
+
+            <div class="project-section">
+              <h3>My Role</h3>
+              <p>
+                I worked as both Project Manager and Developer, focusing on game
+                flow, scene management, UI logic, and gameplay interactions.
+              </p>
+            </div>
+
+            <div class="project-section">
+              <h3>What I Worked On</h3>
+              <ul>
+                <li>Developed game flow and scene management using p5.js.</li>
+                <li>Built UI logic and interactive gameplay features.</li>
+                <li>Implemented enemies and other game entities.</li>
+                <li>
+                  Worked on interactions between game entities and different
+                  scenes.
+                </li>
+                <li>
+                  Managed development tasks and the project timeline for a
+                  6-person Agile team.
+                </li>
+                <li>Used GitHub for version control and team collaboration.</li>
+              </ul>
+            </div>
+
+            <div class="project-section">
+              <h3>Technologies</h3>
+              <p class="tags">JavaScript · p5.js · Git · GitHub · Agile</p>
+            </div>
+
+            <div class="project-section">
+              <a
+                class="github-link"
+                href="https://github.com/UoB-COMSM0166/2026-group-12"
+                target="_blank"
+                rel="noopener"
+              >
+                GitHub Repository &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="project-gallery">
+            <img
+              src="/img/SKAARL/Gameplay Screenshot 1.png"
+              alt="Gameplay Screenshot 1"
+            />
+            <img
+              src="/img/SKAARL/Gameplay Screenshot 2.png"
+              alt="Gameplay Screenshot 2"
+            />
+            <img
+              src="/img/SKAARL/Gameplay Screenshot 3.png"
+              alt="Gameplay Screenshot 3"
+            />
+            <img
+              src="/img/SKAARL/Gameplay Screenshot 4.png"
+              alt="Gameplay Screenshot 4"
+            />
+          </div>
+
+          <div class="project-demo">
+            <h3>Demo Video</h3>
+            <div class="video-container">
+              <iframe
+                width="1480"
+                height="593"
+                src="https://www.youtube.com/embed/-riqcxFdLk8"
+                title="SKAARL Demo Video"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
