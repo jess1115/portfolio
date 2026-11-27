@@ -322,6 +322,13 @@ a:hover {
   text-decoration: none;
 }
 
+.project-section .note{
+  color: var(--grey);
+  font-size: 10pt;
+  margin-top: 8pt;
+
+}
+
 .project-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
